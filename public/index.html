@@ -3,35 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Pessoas</title>
+    <title>Registro de Contatos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Cadastro de Pessoas</h1>
-        <form id="cadastroForm">
-            <input type="text" id="nome" placeholder="Nome" required>
-            <input type="text" id="cpf" placeholder="CPF" required>
-            <input type="text" id="telefone" placeholder="Telefone" required>
-            <button type="submit">Cadastrar</button>
-        </form>
+    <header class="header">
+        <h1>Registro de Contatos</h1>
+    </header>
 
-        <h2>Pessoas Cadastradas</h2>
-        <table id="pessoasTable">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Nome</th>
-                    <th>CPF</th>
-                    <th>Telefone</th>
-                    <th>Ações</th>
-                </tr>
-            </thead>
-            <tbody>
-                
-            </tbody>
-        </table>
-    </div>
+    <main class="main-content">
+        <section class="form-section">
+            <h2>Adicionar Novo Contato</h2>
+            <form id="formRegistro">
+                <div class="input-group">
+                    <label for="inputNome">Nome completo</label>
+                    <input type="text" id="inputNome" placeholder="Digite o nome" required>
+                </div>
+                <div class="input-group">
+                    <label for="inputCpf">CPF</label>
+                    <input type="text" id="inputCpf" placeholder="Digite o CPF" required>
+                </div>
+                <div class="input-group">
+                    <label for="inputTelefone">Telefone</label>
+                    <input type="text" id="inputTelefone" placeholder="Digite o telefone" required>
+                </div>
+                <div class="button-group">
+                    <button type="submit">Salvar Contato</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="list-section">
+            <h2>Lista de Contatos</h2>
+            <div class="table-container">
+                <table id="tabelaContatos">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nome</th>
+                            <th>CPF</th>
+                            <th>Telefone</th>
+                            <th>Opções</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Linhas de contatos serão inseridas aqui -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Registro de Contatos. Todos os direitos reservados.</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
