@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "joaovc",
+    "password": "joaovc",
+    "database": "api_development",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "joaovc",
+    "password": "joaovc",
+    "database": "api_node_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "joaovc",
+    "password": "joaovc",
+    "database": "api_node_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
